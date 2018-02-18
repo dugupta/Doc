@@ -915,3 +915,20 @@ https://secure07a.chase.com/svc/wr/payments/secure/v1/billpay/merchant/repeating
 formId:fXwFPqzmET
 
 {"code":"SUCCESS","payeeName":"DummyLink","payeeLabel":"Dummy payee...5623","amount":0.01,"fundingAccountName":"FINN CHECKING (...5896)","memo":"Set up Repeat Payment","model":{"dayOfMonth":"ONE","frequency":"TWICE_MONTHLY","numberOfPayments":10,"openEnded":false,"secondDayOfMonth":"TWENTYONE"},"scheduledPaymentDueDate":"20180301","scheduledPaymentId":6913213132,"scheduledPaymentStatus":"PENDING"}
+
+
+
+Cancel OnS
+
+Option call:
+https://secure07a.chase.com/svc/rr/payments/secure/v1/billpay/card/payment/cancel/option
+paymentId:-9
+
+{"code":"SUCCESS","paymentId":-9,"token":0,"amount":1.00,"source":"OTHER"}
+
+
+Cancel:https://secure07a.chase.com/svc/wr/payments/secure/v1/billpay/card/payment/cancel
+* paymentId:-9
+* token:0
+
+{"code":"SUCCESS","amount":1.00,"payeeMask":"CREDIT CARD (...2070)"}
